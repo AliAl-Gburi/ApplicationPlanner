@@ -1,0 +1,153 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom:10px ;
+}
+body {
+    background-color: cadetblue;
+}
+.mycard {
+    margin-top: 20px;
+    padding: 50px;
+}
+.flexer {
+    display: flex;
+    flex-direction:row ;
+}
+th {
+    padding: 6px;
+    color: white;
+    background-color: darkblue;
+
+}
+.calButton {
+    padding: 5px;
+    border: none;
+    background: none;
+}
+.hasdates{
+    border-bottom: darkblue 2px solid;
+    box-shadow: inset 0 -3px 0 -1px darkblue;
+    transition: box-shadow .1s ease-in-out, color .1s ease-in-out;
+
+}
+#calendarcontainer {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#calendar {
+    width: 400px;
+    align-content: center;
+}
+.timeslots {
+    margin-top: 50px;
+    width: 20%;
+}
+#timelist {
+    display: flex;
+    width: 300px;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#calendarHeader {
+    display: flex;
+    flex: 0 0 auto;
+}
+#pre {
+    margin-right:25px ;
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+#nex{
+    margin-left: 25px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+#monthdiv {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    width: 120px !important;
+}
+#timelist li{
+    list-style: none;
+    margin: 5px;
+}
+#timelist li a {
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 7px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.selectedday{
+    color: white;
+    background-color: darkblue;
+}
+
+#timelist li a:hover {
+    background-color: darkslateblue;
+}
+
+.hasdates:hover {
+    box-shadow: inset 0 -33px 0 -1px darkblue;
+    color: white;
+}
+@keyframes dayhover {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: darkblue;
+        color: white;
+    }
+}
+.display-block {
+    display: block;
+}
+.display-none {
+    display: none;
+}
+.mondayintervalslist, .tuesdayintervalslist, .wednesdayintervalslist, .thursdayintervalslist, .fridayintervalslist, .saturdayintervalslist, .sundayintervalslist {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: cadetblue solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.timeinput {
+    max-width: 100px;
+    display: inline;
+    margin-left: 10px;
+}
+.endlabel {
+    margin-left: 20px;
+}
+.timesne {
+    display: inline;
+}
+.daycheck {
+    margin-top: 10px;
+}
+.matop {
+    margin-top: 20px !important;
+}
+.required {
+    color:red;
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: white;
+
+
+}
